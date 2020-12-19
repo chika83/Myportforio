@@ -1,0 +1,140 @@
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-btn p{
+    font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+}
+  
+  /*----------------------------
+  * メニュー本体
+  *----------------------------*/
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(85, 85, 85, 0.5);
+}
+.menu__item{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+  
+  /*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+  
+  /* アニメーション前のメニューの状態 */
+.menu{
+    transform: translateX(100vw);
+    transition: all .5s linear;
+    opacity: 0;
+}
+  /* アニメーション後のメニューの状態 */
+.menu.is-active{
+    transform: translateX(0);
+    opacity: 1;
+}
+   
+body {
+    background-color:black;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color:#5a595932;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#canvas-title {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:sans-serif;
+    position: absolute;
+    width: 1200px;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+     letter-spacing: 3px;
+    color: #fff;
+    font-size: 77px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  element.style {
+    width: 100%;
+    height: 800px;
+}
+
+/* ---------------------------------------------------- */
+footer {
+    letter-spacing: 3px;
+    background-color: black;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+}
+
+#footer-box {
+    color: #f9f9f9;
+    margin: 0;
+}
+#footer-box h2{
+    margin: 40px 0px 0px 40px;
+    letter-spacing: 4px;
+    font-size: 5px;
+}
+#footer-box p{
+    margin: 0px 0px 0px 40px;
+    letter-spacing: 4px;
+    font-size: 5px;
+}
+
+#footer-top {
+    margin: 40px 40px;
+    width: 40px;
+    align-items: center;
+}
+
+#footer-top a{
+    color: #f9f9f9;
+    text-decoration: none;
+    align-items: center;
+}

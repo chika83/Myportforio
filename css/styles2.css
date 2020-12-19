@@ -1,0 +1,318 @@
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-btn p{
+    font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+}
+  
+  /*----------------------------
+  * メニュー本体
+  *----------------------------*/
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(85, 85, 85, 0.5);
+}
+.menu__item{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+  
+  /*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+  
+  /* アニメーション前のメニューの状態 */
+.menu{
+    transform: translateX(100vw);
+    transition: all .5s linear;
+    opacity: 0;
+}
+  /* アニメーション後のメニューの状態 */
+.menu.is-active{
+    transform: translateX(0);
+    opacity: 1;
+}
+/* --------------- */
+body {
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+header {
+    width: 100%;
+    background-color:#1f1f1f;
+    color:#f9f9f9b6;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tittle {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+#sub-tittle {
+    display: flex;
+    margin: 0 auto;
+    font-size: 20px;
+    align-items: center;
+     
+}
+
+#sub-tittle a{
+    color: black;
+    color:#f9f9f9b6;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#sub-tittle a:hover {
+    color: black;
+    color: rgb(100, 99, 99);
+    margin: 0 10px;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.back {
+    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5%;
+}
+
+.back-text{
+    background-color:#1f1f1f;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-text h1 {
+    color: #f9f9f9;
+    margin-right: 40px;
+}
+
+.back-text p{
+    color: #f9f9f9;
+    font-size: 20px;
+    margin: 0;
+    width:400px ;
+}
+
+.text-box {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lozad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacity-box p{
+    margin: 0;
+    font-size: 80px;
+}
+
+.opacity-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    font-family:  'Anton', sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    background-color:rgba(160, 160, 160, 0.5);
+    border: 1px solid black;
+}
+
+#back1{
+    background-image:url(../img2/01.jpeg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back2 {
+    background-image:url(../img2/canada1.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back3 {
+    background-image:url(../img2/canada.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back4 {
+    background-image:url(../img2/australia1.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back5 {
+    background-image:url(../img2/vietnum.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back6 {
+    background-image:url(../img2/tai1.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back7 {
+    background-image:url(../img2/03.jpeg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back8 {
+    background-image:url(../img2/dubai01.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back9 {
+    background-image:url(../img2/hongkong2.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#back10 {
+    background-image:url(../img2/taiwan.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: black;
+
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-box {
+    color: #f9f9f9;
+    margin: 0;
+   
+}
+#footer-box h2{
+    
+    margin: 40px 0px 0px 40px;
+}
+#footer-box p{
+    
+    margin: 0px 0px 0px 40px;
+}
+
+#footer-box2 {
+   display: flex;
+   width: 400px;
+   justify-content: space-between;
+
+}
+
+#footer-box2 a {
+    text-decoration: none;
+    color: #f9f9f9;
+    height: 20px;
+    margin-top: 40px;
+}
+#footer-box2 a:hover{
+    text-decoration: none;
+    color: #f9f9f9;
+    padding: 5px;
+    border:1px solid gray;
+}
+
+#footer-top {
+    margin: 40px 40px;
+    width: 40px;
+    align-items: center;
+}
+
+#footer-top a{
+    color: #f9f9f9;
+    text-decoration: none;
+    align-items: center;
+}
