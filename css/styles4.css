@@ -33,7 +33,6 @@ border-bottom: 1px solid #ddd;
 width: 100%;
 max-width: 248px;
 letter-spacing: 0.05em;
-font-weight: bold;
 font-size: 18px;
 }
 @media screen and (max-width: 480px) {
