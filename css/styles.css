@@ -24,7 +24,7 @@
 a{
     text-decoration: none;
 }
-  
+
   /*----------------------------
   * メニュー本体
   *----------------------------*/
@@ -50,11 +50,11 @@ a{
     font-size: 30px;
     box-sizing: border-box;
 }
-  
+
   /*----------------------------
   * アニメーション部分
   *----------------------------*/
-  
+
   /* アニメーション前のメニューの状態 */
 .menu{
     transform: translateX(100vw);
@@ -66,7 +66,7 @@ a{
     transform: translateX(0);
     opacity: 1;
 }
-   
+
 body {
     background-color:black;
 }
@@ -80,25 +80,86 @@ header {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 #canvas-title {
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family:sans-serif;
     position: absolute;
-    width: 1200px;
+    /* width: 1200px; */
     top: 70%;
     left: 55%;
     transform: translate(-50%, -50%);
      letter-spacing: 3px;
     color: #fff;
-    font-size: 77px;
+    font-size: 60px;
     font-weight: bold;
     user-select: none;
   }
 
-  element.style {
-    width: 100%;
-    height: 800px;
+  #canvas {
+    width: 980px;
+    height: 2183px;
+}
+
+ #box{
+     width: 100%;
+ }
+
+@media screen and (max-width: 480px) {
+
+    #canvas-title {
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-family:sans-serif;
+        position: absolute;
+        /* width: 90%; */
+        top: 70%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+         letter-spacing: 3px;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+        user-select: none;
+      }
+
+    .menu-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(85, 85, 85, 0.5);
+    }
+
+    .menu-btn p {
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+#canvas {
+    width: 980px;
+    height: 2183px;
+}
 }
 
 /* ---------------------------------------------------- */
